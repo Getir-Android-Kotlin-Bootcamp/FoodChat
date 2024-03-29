@@ -13,6 +13,11 @@
         android:theme="@style/Theme.FoodChat"
         tools:targetApi="31">
         <activity
+            android:name=".compose.FoodChatComposeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_food_chat_compose"
+            android:theme="@style/Theme.FoodChat" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

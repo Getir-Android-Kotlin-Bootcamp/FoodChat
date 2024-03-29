@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FoodChat</string>
+    <string name="title_activity_food_chat_compose">FoodChatComposeActivity</string>
 </resources>
