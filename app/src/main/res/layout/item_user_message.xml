@@ -10,5 +10,6 @@
         android:padding="12dp"
         android:background="@drawable/sent_message"
         android:textColor="@color/white"
-        android:text="@string/hello_blank_fragment" />
+        android:text="@string/hello_blank_fragment"
+        android:fontFamily="@font/poppins"/>
 </RelativeLayout>

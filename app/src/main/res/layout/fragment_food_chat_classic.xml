@@ -37,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="33dp"
         android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="23sp"
         android:text="Chat"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton" />
@@ -79,6 +81,7 @@
             android:background="@color/box_color"
             android:backgroundTint="@null"
             android:hint="FoodChat typing..."
+            android:fontFamily="@font/poppins"
             android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/sendButton"

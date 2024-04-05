@@ -9,6 +9,7 @@
         android:layout_height="wrap_content"
         android:text="@string/hello_blank_fragment"
         android:padding="12dp"
+        android:fontFamily="@font/poppins"
         android:textColor="@color/black"
         android:background="@drawable/received_message"/>
 
