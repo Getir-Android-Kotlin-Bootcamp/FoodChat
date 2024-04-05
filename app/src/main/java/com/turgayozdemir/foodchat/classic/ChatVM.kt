@@ -46,7 +46,6 @@ class ChatVM : ViewModel() {
         }
     }
 
-
     private fun getResponse(prompt: String) {
         viewModelScope.launch {
             val chat = ChatData.getResponse(prompt)

@@ -11,5 +11,6 @@
         android:background="@drawable/sent_message"
         android:textColor="@color/white"
         android:text="@string/hello_blank_fragment"
-        android:fontFamily="@font/poppins"/>
+        android:fontFamily="@font/poppins"
+        android:textSize="14sp"/>
 </RelativeLayout>

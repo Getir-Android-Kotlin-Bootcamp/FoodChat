@@ -10,7 +10,8 @@
         android:text="@string/hello_blank_fragment"
         android:padding="12dp"
         android:fontFamily="@font/poppins"
+        android:textSize="14sp"
         android:textColor="@color/black"
-        android:background="@drawable/received_message"/>
+        android:background="@drawable/received_message2"/>
 
 </FrameLayout>

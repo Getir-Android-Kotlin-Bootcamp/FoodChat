@@ -27,7 +27,6 @@ class ChatAdapter(private var messages: MutableList<Chat>) : RecyclerView.Adapte
 
     override fun getItemViewType(position: Int): Int {
         val message = messages[position]
-        Log.e("BUSRA", message.isStatic.toString())
         return when {
             message.isStatic -> VIEW_TYPE_STATIC
             message.isFromUser -> VIEW_TYPE_USER_MESSAGE
@@ -74,29 +73,21 @@ class ChatAdapter(private var messages: MutableList<Chat>) : RecyclerView.Adapte
 
     @SuppressLint("NotifyDataSetChanged")
     fun updateMessages(newMessages: List<Chat>) {
+        val initialMessageAsList = mutableListOf(initialMessage)
         messages.clear()
-        messages.add(0,initialMessage)
-        messages.addAll(newMessages)
+        messages.addAll(newMessages + initialMessageAsList)
         notifyDataSetChanged()
     }
-
-
 
     class UserMessageViewHolder(private val binding: ItemUserMessageBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(message: Chat) {
             binding.messageText.text = message.prompt
-            val userMessageBackground = ContextCompat.getDrawable(binding.root.context, R.drawable.sent_message)
-            binding.messageText.background = userMessageBackground
-
-
         }
     }
 
     class OtherMessageViewHolder(private val binding: ItemOtherMessageBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(message: Chat) {
             binding.messageText.text = message.prompt
-            val otherMessageBackground = ContextCompat.getDrawable(binding.root.context, R.drawable.received_message)
-            binding.messageText.background = otherMessageBackground
         }
     }
 
