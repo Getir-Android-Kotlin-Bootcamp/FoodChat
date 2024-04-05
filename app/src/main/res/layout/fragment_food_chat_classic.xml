@@ -75,7 +75,7 @@
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/messageInput"
             android:layout_width="0dp"
-            android:layout_height="56dp"
+            android:layout_height="wrap_content"
             android:layout_marginStart="24dp"
             android:layout_marginTop="8dp"
             android:background="@color/box_color"
